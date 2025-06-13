@@ -1,19 +1,14 @@
-//
-//  ProductDetailView.swift
-//  GroceryApp
-//
-//  Created by Anil Kumar on 12/06/25.
-//
-
 import SwiftUI
 
-
 struct ProductDetailView: View {
-    let name: String
-    let price: String
-    let imageName: String
+    @State var name: String
+    @State var price: String
+    @State var imageName: String
+
+
     @State private var quantity: Int = 1
-    @State private var navigateToCart = false
+    @State private var showConfirmation = false
+
     @EnvironmentObject var cartVM: CartViewModel
 
     var body: some View {
@@ -59,22 +54,10 @@ struct ProductDetailView: View {
             }
             .padding(.horizontal)
 
-            // NavigationLink (hidden trigger)
-            NavigationLink(
-                destination: CartView(
-                    name: name,
-                    price: price,
-                
-                ),
-                isActive: $navigateToCart
-            ) {
-                EmptyView()
-            }
-
-            // Add to Cart Button
             Button(action: {
-                cartVM.addItem(name: name, price: price, quantity: quantity) // ✅ Add to shared cart
-                navigateToCart = true
+                cartVM.addItem(name: name, price: price, quantity: quantity)
+                quantity = 1
+                showConfirmation = true
             }) {
                 Text("Add to Cart")
                     .font(.headline)
@@ -85,6 +68,13 @@ struct ProductDetailView: View {
                     .cornerRadius(10)
             }
             .padding(.horizontal)
+            .alert(isPresented: $showConfirmation) {
+                Alert(
+                    title: Text("Added to Cart"),
+                    message: Text("\(quantity) \(name)(s) added."),
+                    dismissButton: .default(Text("OK"))
+                )
+            }
 
             Spacer()
         }
@@ -92,9 +82,3 @@ struct ProductDetailView: View {
         .navigationTitle(name)
     }
 }
-
-
-
-//#Preview {
-//    ProductDetailView()
-//}

@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9EE008742DFAB57F00B90540 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EE0086D2DFAB57F00B90540 /* ContentView.swift */; };
 		9EE008752DFAB57F00B90540 /* CoreDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9EE0086E2DFAB57F00B90540 /* CoreDataModel.xcdatamodeld */; };
 		9EE008762DFAB57F00B90540 /* GroceryAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EE0086F2DFAB57F00B90540 /* GroceryAppApp.swift */; };
 		9EE008772DFAB57F00B90540 /* SignupScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EE008702DFAB57F00B90540 /* SignupScreen.swift */; };
@@ -21,8 +20,9 @@
 		9EE008892DFAFFD100B90540 /* AddToCartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EE008882DFAFFD100B90540 /* AddToCartView.swift */; };
 		9EE0088B2DFB1A1D00B90540 /* CartViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EE0088A2DFB1A1D00B90540 /* CartViewModel.swift */; };
 		9EE0088D2DFB1C2200B90540 /* CartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EE0088C2DFB1C2200B90540 /* CartView.swift */; };
-		9EE0088F2DFB28D500B90540 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EE0088E2DFB28D500B90540 /* UserViewModel.swift */; };
-		9EE008912DFB298500B90540 /* MainAppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EE008902DFB298500B90540 /* MainAppView.swift */; };
+		9EE008A52DFB343F00B90540 /* ViewAllItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EE008A42DFB343F00B90540 /* ViewAllItems.swift */; };
+		9EE008C52DFC0E6F00B90540 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EE008C42DFC0E6F00B90540 /* ProfileView.swift */; };
+		9EE008C92DFC43D600B90540 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EE008C82DFC43D600B90540 /* CustomTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,7 +46,6 @@
 		9EE008342DFAAF5600B90540 /* GroceryApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GroceryApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9EE008412DFAAF5800B90540 /* GroceryAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GroceryAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9EE0084B2DFAAF5800B90540 /* GroceryAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GroceryAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		9EE0086D2DFAB57F00B90540 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		9EE0086F2DFAB57F00B90540 /* GroceryAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroceryAppApp.swift; sourceTree = "<group>"; };
 		9EE008702DFAB57F00B90540 /* SignupScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupScreen.swift; sourceTree = "<group>"; };
 		9EE008722DFAB57F00B90540 /* CoreDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreDataModel.xcdatamodel; sourceTree = "<group>"; };
@@ -60,8 +59,9 @@
 		9EE008882DFAFFD100B90540 /* AddToCartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddToCartView.swift; sourceTree = "<group>"; };
 		9EE0088A2DFB1A1D00B90540 /* CartViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewModel.swift; sourceTree = "<group>"; };
 		9EE0088C2DFB1C2200B90540 /* CartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartView.swift; sourceTree = "<group>"; };
-		9EE0088E2DFB28D500B90540 /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
-		9EE008902DFB298500B90540 /* MainAppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainAppView.swift; sourceTree = "<group>"; };
+		9EE008A42DFB343F00B90540 /* ViewAllItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewAllItems.swift; sourceTree = "<group>"; };
+		9EE008C42DFC0E6F00B90540 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		9EE008C82DFC43D600B90540 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -147,23 +147,127 @@
 			isa = PBXGroup;
 			children = (
 				9EE0086F2DFAB57F00B90540 /* GroceryAppApp.swift */,
-				9EE008902DFB298500B90540 /* MainAppView.swift */,
-				9EE008702DFAB57F00B90540 /* SignupScreen.swift */,
-				9EE0087E2DFAC2CC00B90540 /* LoginScreen.swift */,
-				9EE008802DFAC2D600B90540 /* HomeScreen.swift */,
-				9EE008822DFAC38000B90540 /* SectionView.swift */,
-				9EE008842DFAEF5300B90540 /* ProductDetailView.swift */,
-				9EE0087A2DFAB9A200B90540 /* AuthViewModel.swift */,
-				9EE008862DFAF0D700B90540 /* TabBarView.swift */,
-				9EE008882DFAFFD100B90540 /* AddToCartView.swift */,
-				9EE0088C2DFB1C2200B90540 /* CartView.swift */,
-				9EE0086D2DFAB57F00B90540 /* ContentView.swift */,
-				9EE0088A2DFB1A1D00B90540 /* CartViewModel.swift */,
-				9EE0088E2DFB28D500B90540 /* UserViewModel.swift */,
-				9EE0086E2DFAB57F00B90540 /* CoreDataModel.xcdatamodeld */,
-				9EE0087C2DFABA9E00B90540 /* CoreDataManager.swift */,
+				9EE008AC2DFBF13900B90540 /* TabView */,
+				9EE008A72DFBF02900B90540 /* LoginView */,
+				9EE008A62DFBF00A00B90540 /* SignUpView */,
+				9EE008A82DFBF04D00B90540 /* HomeView */,
+				9EE008B02DFBF18A00B90540 /* CartVM */,
+				9EE008AE2DFBF16200B90540 /* CartItems */,
+				9EE008AD2DFBF14E00B90540 /* AddToCart */,
+				9EE008C62DFC115A00B90540 /* Coredata */,
 			);
 			path = GroceryApp;
+			sourceTree = "<group>";
+		};
+		9EE008A62DFBF00A00B90540 /* SignUpView */ = {
+			isa = PBXGroup;
+			children = (
+				9EE008702DFAB57F00B90540 /* SignupScreen.swift */,
+			);
+			path = SignUpView;
+			sourceTree = "<group>";
+		};
+		9EE008A72DFBF02900B90540 /* LoginView */ = {
+			isa = PBXGroup;
+			children = (
+				9EE0087E2DFAC2CC00B90540 /* LoginScreen.swift */,
+				9EE008C82DFC43D600B90540 /* CustomTextField.swift */,
+			);
+			path = LoginView;
+			sourceTree = "<group>";
+		};
+		9EE008A82DFBF04D00B90540 /* HomeView */ = {
+			isa = PBXGroup;
+			children = (
+				9EE008802DFAC2D600B90540 /* HomeScreen.swift */,
+				9EE008A92DFBF06E00B90540 /* Section */,
+				9EE008AA2DFBF10700B90540 /* ProductDetail */,
+			);
+			path = HomeView;
+			sourceTree = "<group>";
+		};
+		9EE008A92DFBF06E00B90540 /* Section */ = {
+			isa = PBXGroup;
+			children = (
+				9EE008822DFAC38000B90540 /* SectionView.swift */,
+			);
+			path = Section;
+			sourceTree = "<group>";
+		};
+		9EE008AA2DFBF10700B90540 /* ProductDetail */ = {
+			isa = PBXGroup;
+			children = (
+				9EE008842DFAEF5300B90540 /* ProductDetailView.swift */,
+			);
+			path = ProductDetail;
+			sourceTree = "<group>";
+		};
+		9EE008AB2DFBF11E00B90540 /* AuthView */ = {
+			isa = PBXGroup;
+			children = (
+				9EE0087A2DFAB9A200B90540 /* AuthViewModel.swift */,
+			);
+			path = AuthView;
+			sourceTree = "<group>";
+		};
+		9EE008AC2DFBF13900B90540 /* TabView */ = {
+			isa = PBXGroup;
+			children = (
+				9EE008862DFAF0D700B90540 /* TabBarView.swift */,
+			);
+			path = TabView;
+			sourceTree = "<group>";
+		};
+		9EE008AD2DFBF14E00B90540 /* AddToCart */ = {
+			isa = PBXGroup;
+			children = (
+				9EE008882DFAFFD100B90540 /* AddToCartView.swift */,
+				9EE008C72DFC138D00B90540 /* ProfileScreen */,
+			);
+			path = AddToCart;
+			sourceTree = "<group>";
+		};
+		9EE008AE2DFBF16200B90540 /* CartItems */ = {
+			isa = PBXGroup;
+			children = (
+				9EE0088C2DFB1C2200B90540 /* CartView.swift */,
+			);
+			path = CartItems;
+			sourceTree = "<group>";
+		};
+		9EE008AF2DFBF17500B90540 /* ViewAll */ = {
+			isa = PBXGroup;
+			children = (
+				9EE008A42DFB343F00B90540 /* ViewAllItems.swift */,
+			);
+			path = ViewAll;
+			sourceTree = "<group>";
+		};
+		9EE008B02DFBF18A00B90540 /* CartVM */ = {
+			isa = PBXGroup;
+			children = (
+				9EE0088A2DFB1A1D00B90540 /* CartViewModel.swift */,
+				9EE008AF2DFBF17500B90540 /* ViewAll */,
+			);
+			path = CartVM;
+			sourceTree = "<group>";
+		};
+		9EE008C62DFC115A00B90540 /* Coredata */ = {
+			isa = PBXGroup;
+			children = (
+				9EE0087C2DFABA9E00B90540 /* CoreDataManager.swift */,
+				9EE0086E2DFAB57F00B90540 /* CoreDataModel.xcdatamodeld */,
+				9EE008AB2DFBF11E00B90540 /* AuthView */,
+			);
+			path = Coredata;
+			sourceTree = "<group>";
+		};
+		9EE008C72DFC138D00B90540 /* ProfileScreen */ = {
+			isa = PBXGroup;
+			children = (
+				9EE008C42DFC0E6F00B90540 /* ProfileView.swift */,
+			);
+			path = ProfileScreen;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -311,17 +415,17 @@
 				9EE008872DFAF0D700B90540 /* TabBarView.swift in Sources */,
 				9EE008852DFAEF5300B90540 /* ProductDetailView.swift in Sources */,
 				9EE0088B2DFB1A1D00B90540 /* CartViewModel.swift in Sources */,
+				9EE008C92DFC43D600B90540 /* CustomTextField.swift in Sources */,
+				9EE008A52DFB343F00B90540 /* ViewAllItems.swift in Sources */,
 				9EE0087B2DFAB9A200B90540 /* AuthViewModel.swift in Sources */,
 				9EE008832DFAC38000B90540 /* SectionView.swift in Sources */,
-				9EE008742DFAB57F00B90540 /* ContentView.swift in Sources */,
+				9EE008C52DFC0E6F00B90540 /* ProfileView.swift in Sources */,
 				9EE008752DFAB57F00B90540 /* CoreDataModel.xcdatamodeld in Sources */,
 				9EE0088D2DFB1C2200B90540 /* CartView.swift in Sources */,
 				9EE008812DFAC2D600B90540 /* HomeScreen.swift in Sources */,
 				9EE0087F2DFAC2CC00B90540 /* LoginScreen.swift in Sources */,
 				9EE008762DFAB57F00B90540 /* GroceryAppApp.swift in Sources */,
 				9EE008772DFAB57F00B90540 /* SignupScreen.swift in Sources */,
-				9EE008912DFB298500B90540 /* MainAppView.swift in Sources */,
-				9EE0088F2DFB28D500B90540 /* UserViewModel.swift in Sources */,
 				9EE008892DFAFFD100B90540 /* AddToCartView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -492,6 +596,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -520,6 +625,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

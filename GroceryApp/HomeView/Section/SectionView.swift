@@ -17,15 +17,18 @@ struct SectionView: View {
                 Text(title)
                     .font(.headline)
                 Spacer()
-                Button("View All") {}
-                    .foregroundColor(.gray)
+                
+                NavigationLink(destination: ViewAllItemsView(title: title, items: items)) {
+                    Text("View All")
+                        .foregroundColor(.gray)
+                        .font(.subheadline)
+                }
             }
             .padding(.horizontal)
 
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack(spacing: 15) {
                     ForEach(items, id: \.name) { item in
-                        // Wrap the full card in NavigationLink
                         NavigationLink(destination: ProductDetailView(
                             name: item.name,
                             price: item.price,
@@ -54,7 +57,7 @@ struct SectionView: View {
                             .cornerRadius(12)
                             .shadow(radius: 2)
                         }
-                        .buttonStyle(PlainButtonStyle()) 
+                        .buttonStyle(PlainButtonStyle())
                     }
                 }
                 .padding()
@@ -63,3 +66,4 @@ struct SectionView: View {
         }
     }
 }
+

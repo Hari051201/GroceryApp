@@ -13,11 +13,11 @@ struct GroceryAppApp: App {
     @StateObject var cartVM = CartViewModel()
     var body: some Scene {
         WindowGroup {
-            HomeScreen()
+            SignupScreen()
                 .environmentObject(cartVM)
         }
     }
-}
+}   
 
 
 
@@ -34,3 +34,5 @@ struct PersistenceController {
         }
     }
 }
+
+

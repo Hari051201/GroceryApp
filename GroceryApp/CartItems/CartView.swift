@@ -8,10 +8,7 @@
 import SwiftUI
 
 struct CartView: View {
-    let name: String
-    let price: String
-//    let imageName: String
-    @State private var quantity: Int = 1
+
     @EnvironmentObject var cartVM: CartViewModel
 
     var body: some View {
@@ -24,18 +21,22 @@ struct CartView: View {
                 Text("No items in cart.")
                     .foregroundColor(.gray)
             } else {
-                List(cartVM.items) { item in
-                    HStack {
-                        VStack(alignment: .leading) {
-                            Text(item.name ?? "")
-                            Text("Qty: \(item.quantity)")
-                                .font(.subheadline)
-                                .foregroundColor(.gray)
+                List {
+                    ForEach(cartVM.items, id: \.objectID) { item in
+                        HStack {
+                            VStack(alignment: .leading) {
+                                Text(item.name ?? "")
+                                    .font(.headline)
+                                Text("Qty: \(item.quantity)")
+                                    .font(.subheadline)
+                                    .foregroundColor(.gray)
+                            }
+                            Spacer()
+                            Text(item.price ?? "")
                         }
-                        Spacer()
-                        Text(item.price ?? "")
                     }
                 }
+                .listStyle(PlainListStyle())
 
                 Text("Total: \(cartVM.totalPrice)")
                     .font(.title2)
@@ -47,6 +48,7 @@ struct CartView: View {
         }
     }
 }
+
 
 
 
